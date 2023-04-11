@@ -1,0 +1,40 @@
+header{
+    background: url('../img/main-bg.png') no-repeat center top;
+    height: 1068px;
+}
+
+.title{
+    padding-top: 70px;
+    padding-left: 600px;
+    font-family: 'Inter', sans-serif;
+    text-align: end;
+    color: rgb(234, 230, 230);
+    margin-right: -55px;
+    letter-spacing: 1px;
+}
+
+.title__heading{
+    font-size: 108px;
+    font-weight: 600;
+}
+
+.title__desc{
+    font-size: 50px;
+    padding-top: 150px;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+.title__secondconv{
+    margin-top: -18px;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+.title_postscriptum{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 300;
+}
+
