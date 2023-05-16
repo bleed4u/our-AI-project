@@ -42,11 +42,12 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="image-box">
-                        <img class="image" src="../Front/img/no-image-icon.svg" alt="Описание изображения">
+                        <img id="imageFromUser" class="image" src="../Front/img/no-image-icon.svg" alt="Описание изображения">
                     </div>
-                    <button class="select-image">
+                    <button id="selectImageButton" class="select-image">
                         Выбрать фотографию
                     </button>
+                    <script src="js/selectImageHandler.js"></script>
                 </div>
             </div>
         </div>
@@ -56,11 +57,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="title__diagnosis">
+                    <div id="diagnosisTitle" class="title__diagnosis">
                         Ваш предполагаемый диагноз...
                     </div>
                     <div class="diagnosis__container">
-                        
+                        <p class="description">
+                            Ожидание...
+                        </p>
                     </div>
                 </div>
             </div>
