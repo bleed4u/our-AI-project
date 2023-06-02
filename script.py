@@ -4,8 +4,8 @@ from PIL import Image
 import numpy as np
 
 # Load the SavedModel
-model = tf.saved_model.load("C:/Users/aysul/OneDrive/Рабочий стол/final_model/")
-class_names = ["Acne and Rosacea", "Actinic Keratosis Basal Cell Carcinoma", "Atopic Dermatitis", "Bullous Disease", "Cellulitis Impetigo", "Eczema", "Exanthems and Drug Eruptions", "Hair Loss Photos Alopecia", "Herpes HPV and other STDs", "Light Diseases and Disorders of Pigmentation", "Lupus and other Connective Tissue diseases", "Melanoma Skin Cancer Nevi and Moles", "Nail Fungus and other Nail Disease", "Poison Ivy Photos and other Contact Dermatitis", "Psoriasis pictures Lichen Planus and related diseases", "Scabies Lyme Disease and other Infestations and Bites", "Seborrheic Keratoses and other Benign Tumors", "Systemic Disease", "Tinea Ringworm Candidiasis and other Fungal Infections", "Urticaria Hives", "Vascular Tumors", "Vasculitis Photos", "D:/homework/our-AI-project/Dataset/Train/Warts Molluscum and other Viral Infections"]
+model = tf.saved_model.load("C:/Users/Тимур/Desktop/our-AI-project-ai-model/final_model/")
+class_names = ["Акне и розацеа", "Актинический кератоз, базально-клеточная карцинома", "Атопический дерматит", "Булезная болезнь", "Феллюлит импетиго", "Экзема", "Экзантемы и лекарственные высыпания",  "Cellulitis Impetigo", "Eczema", "Exanthems and Drug Eruptions", "Hair Loss Photos Alopecia", "Herpes HPV and other STDs", "Light Diseases and Disorders of Pigmentation", "Lupus and other Connective Tissue diseases", "Melanoma Skin Cancer Nevi and Moles", "Nail Fungus and other Nail Disease", "Poison Ivy Photos and other Contact Dermatitis", "Psoriasis pictures Lichen Planus and related diseases", "Scabies Lyme Disease and other Infestations and Bites", "Seborrheic Keratoses and other Benign Tumors", "Systemic Disease", "Tinea Ringworm Candidiasis and other Fungal Infections", "Urticaria Hives", "Vascular Tumors", "Vasculitis Photos", "D:/homework/our-AI-project/Dataset/Train/Warts Molluscum and other Viral Infections"]
 
 # Preprocess the image
 def preprocess_image(image_path):
@@ -17,7 +17,7 @@ def preprocess_image(image_path):
     return image
 
 # Load and preprocess the image
-image_path = "C:/Users/aysul/OneDrive/Рабочий стол/image.jpg"
+image_path = sys.argv[1]
 input_image = preprocess_image(image_path)
 
 # Perform inference
