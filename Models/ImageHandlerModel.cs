@@ -20,7 +20,7 @@ namespace NeuroMedicProject.Models
             {
                 using (StreamReader reader = process.StandardOutput)
                 {
-                    result += "Экзема";
+                    result += reader.ReadToEnd;
                 }
             }
             return result; 
